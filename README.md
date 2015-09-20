@@ -25,11 +25,11 @@ The world first library to tint statusbar without hanging with styles.xml in and
 - *v1.0 :*
 
  >>initial release.
- 
- - *v1.1 :*
+
+- *v1.1 :*
  >> fix issue
-  - *v1.2 :*
+- *v1.2 :*
  >> no need to extends now
->> added new features
+ >> added new features
  *Credits :**
  Sahid Almas
