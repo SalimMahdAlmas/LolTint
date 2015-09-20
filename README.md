@@ -19,7 +19,7 @@ The world first library to tint statusbar without hanging with styles.xml in and
         LolTint.on(true,false,true,Color.COLOR_DEEP_ORANGE,this);
 
     }
-4.Run your project done
+- 4.Run your project done
 
 *Changelog :**
 - *v1.0 :*
@@ -29,7 +29,7 @@ The world first library to tint statusbar without hanging with styles.xml in and
 - *v1.1 :*
  >> fix issue
 
-- *v1.1 :*
+- *v1.2 :*
  >> fix bug
  >> added features
  -*Credits :**
