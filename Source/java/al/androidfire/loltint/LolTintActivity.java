@@ -56,6 +56,14 @@ public abstract class LolTintActivity extends Activity {
         }
 
     }
+
+    /**
+     * This is the power of loltint
+     * @param systemUi if you want to tint statusbar
+     * @param navBar if you want to tint nav bar
+     * @param darker if you want darker tint
+     * @param color the color you want to tint
+     */
     public void setLolTint(boolean systemUi,boolean navBar,boolean darker,int color) {
         if (systemUi || navBar) {
             TURN = true;
@@ -71,7 +79,12 @@ public abstract class LolTintActivity extends Activity {
         }
         getActionBar().setBackgroundDrawable(new ColorDrawable(color));
     }
-
+    /**
+     * This is the power of loltint
+     * @param systemUi if you want to tint statusbar
+     * @param navBar if you want to tint nav bar
+     * @param color the color you want to tint
+     */
     public void setLolTint(boolean systemUi,boolean navBar,int color) {
         if (systemUi || navBar) {
             TURN = true;
@@ -84,6 +97,12 @@ public abstract class LolTintActivity extends Activity {
         }
         getActionBar().setBackgroundDrawable(new ColorDrawable(color));
     }
+    /**
+     * This is the power of loltint
+     * @param systemUi if you want to tint statusbar
+     * @param color the color you want to tint
+     */
+
     public void setLolTint(boolean systemUi,int color) {
         if (systemUi) {
             TURN = true;
@@ -94,6 +113,11 @@ public abstract class LolTintActivity extends Activity {
         }
         getActionBar().setBackgroundDrawable(new ColorDrawable(color));
     }
+    /**
+     * This is the power of loltint
+     * @param systemUi if you want to tint statusbar
+     */
+
     public void setLolTint(boolean systemUi) {
         if (systemUi) {
             TURN = true;
@@ -131,3 +155,4 @@ public abstract class LolTintActivity extends Activity {
 
     }
 }
+
