@@ -1,7 +1,7 @@
 # LolTint
 
 
-**Current version : 1.0**
+**Current version : 1.1**
 
 **About LolTint :**
 The world first library to tint statusbar without hanging with styles.xml in android 5.0+
@@ -20,6 +20,9 @@ setLolTint(boolean systemUi)
 - *v1.0 :*
 
  >>1. initial release.
+ 
+ - *v1.1 :*
+ - fix issue
  
  *Credits :**
  Sahid Almas
