@@ -21,8 +21,8 @@ setLolTint(boolean systemUi)
 
  >>1. initial release.
  
- - *v1.1 :*
- - fix issue
+ *v1.1 :*
+ -> fix issue
  
  *Credits :**
  Sahid Almas
