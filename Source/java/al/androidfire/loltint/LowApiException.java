@@ -19,10 +19,15 @@ package al.androidfire.loltint;
 
 public class LowApiException extends Throwable {
 
-
+    /**
+     * Throw error
+     * @param message message you want to put
+     */
     public void printMessage(String message) {
         try {
-            throw new Exception(message);
+            synchronized (message) {
+                throw new Exception(message);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
