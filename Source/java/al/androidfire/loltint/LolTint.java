@@ -25,7 +25,6 @@ import android.os.Build;
 
 /**
  * @author Sahid Almas
- * @see android.app.Activity
  *
  * A library to tint statusbar according to darker version of actionbar color
  *
@@ -34,7 +33,7 @@ import android.os.Build;
  * There is no offical api to get action bar background color
  * we do some stuff that hooked out most of color from action bar
  * if action bar color is not colordrawable it may not work perfectly
- *
+ * 
  */
 public class LolTint {
     private static boolean SUPPORT_LOL_TINT = false;
@@ -152,7 +151,8 @@ public class LolTint {
             SUPPORT_LOL_TINT = true;
         }
         else {
-            new LowApiException().printMessage("Sorry your device does not support loltint");
+            new LowApiException().printMessage("Sorry your device does not support loltint " +
+                    "\n loltint is only supprot on android 5.0+");
         }
 
         if (SUPPORT_LOL_TINT) {
@@ -163,6 +163,7 @@ public class LolTint {
             Rect rect = Utils.getRectFromView(activity.getWindow().getDecorView());
             Bitmap bitmap1 = Bitmap.createBitmap(bitmap, 0, rect.top, bitmap.getWidth(), rect.top);
             int raw_color = Utils.grabColorFromBitmap(bitmap1);
+
             if (systemui && !dark) {
                 activity.getWindow().setStatusBarColor(raw_color);
             } if  (dark) {
