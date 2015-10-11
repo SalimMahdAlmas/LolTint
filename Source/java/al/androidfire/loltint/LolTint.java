@@ -17,11 +17,13 @@
  */
 package al.androidfire.loltint;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
+
 
 /**
  * @author Sahid Almas
@@ -145,9 +147,10 @@ public class LolTint {
      * @param color <p>Color you want to tint the system</p>
      * @param activity <p>The class where will tint</p>
      */
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void performTint(boolean systemui, boolean nav, boolean dark, int color, Activity activity) {
 
-        if (Build.VERSION.RELEASE.contains("5.")) {
+        if (Build.VERSION.RELEASE.contains("5.") || Build.VERSION.RELEASE.contains("6.")) {
             SUPPORT_LOL_TINT = true;
         }
         else {
@@ -155,9 +158,12 @@ public class LolTint {
                     "\n loltint is only supprot on android 5.0+");
         }
 
+
         if (SUPPORT_LOL_TINT) {
             if (activity.getActionBar() != null) {
-                activity.getActionBar().setBackgroundDrawable(new ColorDrawable(color));
+                if (color != 0) {
+                    activity.getActionBar().setBackgroundDrawable(new ColorDrawable(color));
+                }
             }
             Bitmap bitmap = Utils.transferViewIntoBitmap(activity.getWindow().getDecorView());
             Rect rect = Utils.getRectFromView(activity.getWindow().getDecorView());
