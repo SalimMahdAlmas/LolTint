@@ -5,26 +5,27 @@ package al.androidfire.loltint;
  * https://github.com/AndroidFire/ColorHelper/blob/master/LICENSE
  */
 
+
 /**
  * Alternative class of Color with some extra features added
  */
 public class Color extends android.graphics.Color {
 
-    public static int COLOR_RED = parseColor("F44336");
-    public static int COLOR_PINK = parseColor("E91E63");
-    public static int COLOR_PURPLE = parseColor("9C27B0");
-    public static int COLOR_INDIGO = parseColor("3F51B5");
-    public static int COLOR_BLUE = parseColor("2196F3");
-    public static int COLOR_TEAL = parseColor("009688");
-    public static int COLOR_GREEN = parseColor("4CAF50");
-    public static int COLOR_YELLOW = parseColor("FFEB3B");
-    public static int COLOR_BROWN = parseColor("FFEB3B");
-    public static int COLOR_GREY = parseColor("9E9E9E");
-    public static int COLOR_BLUE_GREY = parseColor("607D8B");
+    public static int COLOR_RED = parseColor("#F44336");
+    public static int COLOR_PINK = parseColor("#E91E63");
+    public static int COLOR_PURPLE = parseColor("#9C27B0");
+    public static int COLOR_INDIGO = parseColor("#3F51B5");
+    public static int COLOR_BLUE = parseColor("#2196F3");
+    public static int COLOR_TEAL = parseColor("#009688");
+    public static int COLOR_GREEN = parseColor("#4CAF50");
+    public static int COLOR_YELLOW = parseColor("#FFEB3B");
+    public static int COLOR_BROWN = parseColor("#FFEB3B");
+    public static int COLOR_GREY = parseColor("#9E9E9E");
+    public static int COLOR_BLUE_GREY = parseColor("#607D8B");
     public static int COLOR_DEEP_ORANGE = parseColor("#FF5722");
-    public static int COLOR_LIGHT_GREEN = parseColor("8BC34A");
-    public  static int COLOR_LIGHT_BLUE = parseColor("03A9F4");
-    public  static int COLOR_DEEP_PURPLE = parseColor("673AB7");
+    public static int COLOR_LIGHT_GREEN = parseColor("#8BC34A");
+    public  static int COLOR_LIGHT_BLUE = parseColor("#03A9F4");
+    public  static int COLOR_DEEP_PURPLE = parseColor("#673AB7");
 
 
     /**
